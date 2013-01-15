@@ -157,7 +157,7 @@ function getClassDetails($url, $index)
 						$class['icon_female'] = str_replace('_male', '_female', $val);
 					}
 					
-					$directory = 'D:\\Dropbox\\Projects\\Diablo 3 Site Crawler\\Images\\';
+					$directory = 'Images\\';
 					
 					saveFile($directory.fixFilename($filename),$image_url);
 					//saveFile($directory.fixFilename($filename),str_replace('64', '32', $image_url));
@@ -207,7 +207,7 @@ function getClassDetails($url, $index)
 						$val = strtolower($class['name']).'-'.$matches[1][0];
 						$features[$count]['icon'] = $val;
 						
-						$directory = 'D:\\Dropbox\\Projects\\Diablo 3 Site Crawler\\Images\\';
+						$directory = 'Images\\';
 						
 						saveFile($directory.fixFilename($filename),$base_url.$image_url);
 					}
@@ -583,7 +583,7 @@ function getClassSkill($url, $index, $type)
 					$icon = $val;
 					$values = explode($val, '.');
 					$skill['icon'] = $val;
-					$directory = 'D:\\Dropbox\\Projects\\Diablo 3 Site Crawler\\Images\\';
+					$directory = 'Images\\';
 					
 					saveFile($directory.fixFilename($filename),$image_url);
 				}
@@ -676,7 +676,7 @@ function getClassScreenshots($url, $index)
 				$filename = $matches[1][0].$matches[2][0];
 				$class['screenshots'][$count] = $matches[1][0];
 
-				$directory = 'D:\\Dropbox\\Projects\\Diablo 3 Site Crawler\\Images\\';
+				$directory = 'Images\\';
 				saveFile($directory.fixFilename($filename),$object_url);
 				$count++;
 			}

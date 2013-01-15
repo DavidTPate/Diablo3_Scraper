@@ -137,7 +137,7 @@ function getArtisanDetails($url, $index)
 					
 					$artisan['icon'] = $val;
 					
-					$directory = 'D:\\Dropbox\\Projects\\Diablo 3 Site Crawler\\Images\\';
+					$directory = 'Images\\';
 					
 					saveFile($directory.fixFilename($filename),$image_url);
 				}
@@ -183,7 +183,7 @@ function getArtisanDetails($url, $index)
 						$val = strtolower($artisan['name']).'-'.$matches[1][0];
 						$features[$count]['icon'] = $val;
 						
-						$directory = 'D:\\Dropbox\\Projects\\Diablo 3 Site Crawler\\Images\\';
+						$directory = 'Images\\';
 						
 						saveFile($directory.fixFilename($filename),$base_url.$image_url);
 					}

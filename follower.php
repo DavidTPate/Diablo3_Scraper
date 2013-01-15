@@ -136,7 +136,7 @@ function getFollowerDetails($url, $index)
 					$filename2 = '';
 					$val = $matches[1][0];
 					
-					$directory = 'D:\\Dropbox\\Projects\\Diablo 3 Site Crawler\\Images\\';
+					$directory = 'Images\\';
 					
 					if (saveFile($directory.fixFilename($filename),$image_url))
 					{
@@ -185,7 +185,7 @@ function getFollowerDetails($url, $index)
 						$val = strtolower($follower['name']).'-'.$matches[1][0];
 						$features[$count]['icon'] = $val;
 						
-						$directory = 'D:\\Dropbox\\Projects\\Diablo 3 Site Crawler\\Images\\';
+						$directory = 'Images\\';
 						
 						saveFile($directory.fixFilename($filename),$base_url.$image_url);
 					}
@@ -353,7 +353,7 @@ function getFollowerSkill($url, $index)
 					$val = $matches[1][0];
 					$icon = $val;
 					$values = explode($val, '.');
-					$directory = 'D:\\Dropbox\\Projects\\Diablo 3 Site Crawler\\Images\\';
+					$directory = 'Images\\';
 
 					if (!file_exists($directory.fixFilename($filename)))
 					{

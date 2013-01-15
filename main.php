@@ -33,11 +33,11 @@ function getLinks($url)
 		}
 		else if ($object_value == 'Artisans')
 		{
-			//getArtisans($base_url.$object_href);
+			getArtisans($base_url.$object_href);
 		}
 		else if ($object_value == 'Items')
 		{
-			//getItems($base_url.$object_href);
+			getItems($base_url.$object_href);
 		}
 		else if ($object_value == 'Followers')
 		{

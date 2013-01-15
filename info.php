@@ -146,11 +146,11 @@ include('follower.php');
 include('artisan.php');
 include('item.php');
 
-getClasses("http://us.battle.net/d3/en/class/");
-getFollowers("http://us.battle.net/d3/en/follower/");
+//getClasses("http://us.battle.net/d3/en/class/");
+//getFollowers("http://us.battle.net/d3/en/follower/");
 //getArtisans("http://us.battle.net/d3/en/artisan/");
 
-//getLinks("http://us.battle.net/d3/en/game/");
+getLinks("http://us.battle.net/d3/en/game/");
 appendConstants();
 
 echo trimReplace(json_encode($result));
